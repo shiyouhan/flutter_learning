@@ -53,6 +53,10 @@ final statelessList = <ContainerInfo>[
       'UserAccountDrawerHeader',
       'Flutter提供的一个通用展示结构，相应位置可插入组件，很方便地对特定条目，常用于Drawer中',
       '/useraccountdrawerheader'),
+  ContainerInfo('ButtonWidget', '各类Button组件', '/button'),
+  ContainerInfo('CardWidget', '卡片组件，基于Material组件实现，用于将单个组件卡片化', '/card'),
+  ContainerInfo(
+      'VisibilityWidget', '显隐组件，控制一个组件显示或隐藏，可设置隐藏欧的占位组件。', '/visibility'),
 ];
 
 final statefulList = <ContainerInfo>[
