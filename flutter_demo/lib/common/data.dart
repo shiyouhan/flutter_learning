@@ -99,6 +99,12 @@ final statelessList = <ContainerInfo>[
       '/navigationtoolbar'),
   ContainerInfo(
       'PlaceholderWidget', '一个矩形和叉叉的占位组件，可指定颜色、线宽、宽高等属性。', '/placeholder'),
+  ContainerInfo('IconWidget', '用于图标显示的组件，可指定图标资源、大小、颜色，简单实用。', '/icon'),
+  ContainerInfo(
+      'DividerWidget', '水平分割线，可指定颜色、高度、粗细、左右边距等信息，常用于列表的item分割线。', '/divider'),
+  ContainerInfo('MyPreferredSizeWidget',
+      '优先尺寸组件，可容纳一个子组件，设置优先尺寸，不会对其子组件施加任何约束。', '/mypreferredsize'),
+  ContainerInfo('CupertinoWidget', 'iOS风格通用对话框，可指定头、中、尾部的组件。', '/cupertino'),
 ];
 
 final statefulList = <ContainerInfo>[
