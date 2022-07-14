@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/widget_container1.dart';
 
 final data = <dynamic>[
   Colors.blue[50],
@@ -186,4 +187,10 @@ final statefulList = <ContainerInfo>[
   ContainerInfo('ProgressIndicator', '圆形进度组件、直线型进度组件。', '/progressindicator'),
   ContainerInfo('SelectableText', '可选择的文字，可以选择、复制。可指定浮标的颜色、大小、文字样式、对齐方式等。',
       '/selectabletext'),
+];
+
+final singleRenderList = <ContainerInfo1>[
+  ContainerInfo1('Clip', '路径裁剪、椭圆裁剪、矩形裁剪、圆角矩形裁剪。', '/clip'),
+  ContainerInfo1('Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒', '/box'),
+  ContainerInfo1('AlignPadding', '对齐组件、基线组件、边距组件。', '/alignpadding'),
 ];

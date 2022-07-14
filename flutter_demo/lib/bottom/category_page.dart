@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/page/stateful_widget_page.dart';
 import 'package:flutter_demo/page/stateless_widget_page.dart';
+import 'package:flutter_demo/page/single_render_widget_page.dart';
+import 'package:flutter_demo/page/multi_render_widget_page.dart';
+import 'package:flutter_demo/page/sliver_widget_page.dart';
+import 'package:flutter_demo/page/live_away_widget_page.dart';
+import 'package:flutter_demo/page/other_widget_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);
@@ -14,11 +19,11 @@ class _CategoryPageState extends State with SingleTickerProviderStateMixin {
   final tabPages = [
     const StatelessWidgetPage(),
     const StatefulWidgetPage(),
-    Container(),
-    Container(),
-    Container(),
-    Container(),
-    Container()
+    const SingleRenderWidgetPage(),
+    const MultiRenderWidgetPage(),
+    const SliverWidgetPage(),
+    const LiveAwayWidgetPage(),
+    const OtherWidgetPage(),
   ];
 
   late TabController _tabController;
