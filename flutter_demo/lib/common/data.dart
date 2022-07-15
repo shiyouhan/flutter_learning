@@ -191,6 +191,10 @@ final statefulList = <ContainerInfo>[
 
 final singleRenderList = <ContainerInfo1>[
   ContainerInfo1('Clip', '路径裁剪、椭圆裁剪、矩形裁剪、圆角矩形裁剪。', '/clip'),
-  ContainerInfo1('Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒', '/box'),
+  ContainerInfo1(
+      'Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒', '/box'),
   ContainerInfo1('AlignPadding', '对齐组件、基线组件、边距组件。', '/alignpadding'),
+  ContainerInfo1(
+      'CustomPaint', '自定义绘制，使用内置API绘制各种形状，以及用Path绘制。', '/custompaint'),
+  ContainerInfo1('ColorFiltered', '滤色器。', '/colorfiltered')
 ];
