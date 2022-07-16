@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
 import 'package:flutter_demo/widget/custom/widget_container1.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 
 final data = <dynamic>[
   Colors.blue[50],
@@ -196,5 +197,80 @@ final singleRenderList = <ContainerInfo1>[
   ContainerInfo1('AlignPadding', '对齐组件、基线组件、边距组件。', '/alignpadding'),
   ContainerInfo1(
       'CustomPaint', '自定义绘制，使用内置API绘制各种形状，以及用Path绘制。', '/custompaint'),
-  ContainerInfo1('ColorFiltered', '滤色器。', '/colorfiltered')
+  ContainerInfo1('ColorFiltered', '滤色器。', '/colorfiltered'),
+  ContainerInfo1('LayoutBuilder',
+      '布局构造器，可以监测到父容器的区域大小，并根据父容器的尺寸信息完成定义布局，是一个非常使用的组件。', '/layoutbuilder'),
+  ContainerInfo1(
+      'Offstage', '消失组件，可以容纳一个子组件，可更改其消失与否。offstage属性为true表示隐藏。', '/offstage'),
+  ContainerInfo1(
+      'Opacity', '透明度组件，可容纳一个子组件，将其透明度变为opacity值，取值在0-1之间。', '/opacity'),
+];
+
+final List<SpecialColumnItem> listData = [
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 29,
+    attentionCount: 118,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 动画集录",
+    url: "images/anim_draw.webp",
+    articleCount: 34,
+    attentionCount: 18,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 玩转正则",
+    url: "images/draw_bg3.webp",
+    articleCount: 7,
+    attentionCount: 88,
+  ),
+  SpecialColumnItem(
+    title: "Rust 学习指南",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 228,
+  ),
+  SpecialColumnItem(
+    title: "Vue 学习指南",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "前端绘制宝典",
+    url: "images/anim_draw.webp",
+    articleCount: 19,
+    attentionCount: 1228,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "FlutterUnit 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
 ];

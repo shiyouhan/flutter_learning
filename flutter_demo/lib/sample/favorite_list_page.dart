@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DemoPae extends StatefulWidget {
-  const DemoPae({Key? key}) : super(key: key);
+class FavoriteListPage extends StatefulWidget {
+  const FavoriteListPage({Key? key}) : super(key: key);
 
   @override
-  State<DemoPae> createState() => _DemoPaeState();
+  State<FavoriteListPage> createState() => _FavoriteListPageState();
 }
 
-class _DemoPaeState extends State<DemoPae> {
+class _FavoriteListPageState extends State<FavoriteListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,14 +30,14 @@ class _DemoPaeState extends State<DemoPae> {
       pinned: true,
       elevation: 8,
       flexibleSpace: FlexibleSpaceBar(
-        title: const Text('Demo Page'),
+        title: const Text('Favorite Page'),
         titlePadding: const EdgeInsets.only(left: 55, bottom: 15),
         collapseMode: CollapseMode.pin,
         background: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                'images/banner.jpeg',
+                'images/bg.jpg',
               ),
               fit: BoxFit.cover,
             ),
@@ -99,7 +99,9 @@ class _DemoPaeState extends State<DemoPae> {
                 IconButton(
                   icon: const Icon(Icons.add_circle),
                   tooltip: 'Add new entry',
-                  onPressed: () {},
+                  onPressed: () {
+                    /* ... */
+                  },
                 ),
               ],
             ),
@@ -124,7 +126,7 @@ class _DemoPaeState extends State<DemoPae> {
             alignment: Alignment.center,
             size: Size.zero,
             child: Container(
-              width: MediaQuery.of(context).size.width,
+              width: MediaQuery.of(context).size.width - 40,
               height: 70,
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(
@@ -200,42 +202,44 @@ class _DemoPaeState extends State<DemoPae> {
           height: MediaQuery.of(context).size.height / 2,
           padding: const EdgeInsets.all(10),
           child: ListView.builder(
-              itemCount: 30,
-              itemBuilder: (BuildContext context, int index) {
-                return Column(
-                  children: [
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Card(
-                      elevation: 10,
-                      child: Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 70,
-                        color: Colors.pink.withAlpha(66),
+            itemCount: 30,
+            itemBuilder: (BuildContext context, int index) {
+              return Column(
+                children: [
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Card(
+                    elevation: 10,
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 70,
+                      color: Colors.pink.withAlpha(66),
+                      alignment: Alignment.topRight,
+                      child: const SizedOverflowBox(
                         alignment: Alignment.center,
-                        child: const SizedOverflowBox(
-                          size: Size.zero,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              right: 25.0,
-                              top: 10,
-                            ),
-                            child: Icon(
-                              Icons.favorite,
-                              color: Colors.red,
-                              size: 40,
-                            ),
+                        size: Size.zero,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            right: 25.0,
+                            top: 10,
+                          ),
+                          child: Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                            size: 40,
                           ),
                         ),
                       ),
                     ),
-                    const SizedBox(
-                      height: 10,
-                    )
-                  ],
-                );
-              }),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              );
+            },
+          ),
         ),
       ],
     );

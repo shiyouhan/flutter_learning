@@ -32,6 +32,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_localizations:
     sdk: flutter
+  device_preview: ^1.1.0
+  flutter_custom_clippers: ^2.0.0
+  wrapper: ^1.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -74,6 +77,10 @@ flutter:
   - images/java.png
   - images/dart.png
   - images/kotlin.png
+  - images/anim_draw.webp
+  - images/base_draw.webp
+  - images/draw_bg3.webp
+  - images/draw_bg4.webp
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

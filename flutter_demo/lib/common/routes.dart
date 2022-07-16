@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/bottom/index.dart';
-import 'package:flutter_demo/sample/demo_pae.dart';
+import 'package:flutter_demo/sample/chat_list.dart';
+import 'package:flutter_demo/sample/favorite_list_page.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
+import 'package:flutter_demo/sample/single_chat.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/sample/upload_page.dart';
 import 'package:flutter_demo/widget/single/alignpadding_widget.dart';
 import 'package:flutter_demo/widget/single/box_widget.dart';
 import 'package:flutter_demo/widget/single/clip_widget.dart';
 import 'package:flutter_demo/widget/single/color_filtered_widget.dart';
 import 'package:flutter_demo/widget/single/custom_paint_widget.dart';
+import 'package:flutter_demo/widget/single/layout_builder_widget.dart';
+import 'package:flutter_demo/widget/single/offstage_widget.dart';
+import 'package:flutter_demo/widget/single/opacity_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedbuilder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedcontainer_widget.dart';
 import 'package:flutter_demo/widget/stateful/animatedeffect_widget.dart';
@@ -162,8 +169,15 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/alignpadding': (context) => const AlignPaddingWidget(),
   '/custompaint': (context) => const CustomPaintWidget(),
   '/colorfiltered': (context) => const ColorFilteredWidget(),
+  '/layoutbuilder': (context) => const LayoutBuilderWidget(),
+  '/offstage': (context) => const OffstageWidget(),
+  '/opacity': (context) => const OpacityWidget(),
   // 示例导航
-  '/demo-page': (context) => const DemoPae(),
+  'juejin_list_item': (context) => const JuejinListItem(),
+  'single_chat': (context) => const SingleChat(),
+  'chat_list': (context) => const ChatList(),
+  'upload_page': (context) => const UploadPage(),
+  'favorite_page': (context) => const FavoriteListPage(),
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
 };
