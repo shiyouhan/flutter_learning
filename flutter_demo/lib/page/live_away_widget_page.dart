@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/data.dart';
-import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/widget_container1.dart';
 
 class LiveAwayWidgetPage extends StatelessWidget {
   const LiveAwayWidgetPage({Key? key}) : super(key: key);
@@ -11,9 +11,9 @@ class LiveAwayWidgetPage extends StatelessWidget {
       margin: const EdgeInsets.all(10),
       // 使用 ListView来build一个列表
       child: ListView.builder(
-        itemCount: statefulList.length,
+        itemCount: liveAwayList.length,
         itemBuilder: (BuildContext context, int index) {
-          return WidgetContainer(statefulList[index]);
+          return WidgetContainer1(liveAwayList[index]);
         },
       ),
     );
